@@ -7,9 +7,7 @@
   <title>Học trực tuyến Công nghệ thông tin</title>
   
   <style>
-    /* ==========================================================================
-       1. RESET & PHONG CÁCH CHUNG (Áp dụng cho toàn bộ trang)
-       ========================================================================== */
+ 
     * {
       padding: 0;
       margin: 0;
@@ -21,25 +19,23 @@
       line-height: 1.5;
     }
 
-    /* Thẻ kỹ thuật dùng để xóa thuộc tính nổi (float), tránh lỗi vỡ khung */
+
     .clear {
       clear: both;
     }
 
-    /* ==========================================================================
-       2. VÙNG 1: HEADER & NAVIGATION (Thanh menu màu đen cố định trên cùng)
-       ========================================================================== */
+   
     #header {
       height: 46px;
       background-color: #000;
-      position: fixed; /* Giữ menu cố định khi cuộn trang */
+      position: fixed; 
       top: 0;
       left: 0;
       right: 0;
-      z-index: 1; /* Luôn nằm trên các phần tử khác */
+      z-index: 1;
     }
 
-    /* Danh sách menu chính */
+ 
     #nav {
       display: inline-block;
     }
@@ -58,13 +54,13 @@
       font-size: 15px;
     }
 
-    /* Hiệu ứng di chuột (Hover) vào các nút menu: Đổi nền xám, chữ đen */
+  
     #nav > li:hover > a {
       color: #000;
       background-color: #ccc;
     }
 
-    /* Biểu tượng mũi tên đi xuống ở nút MORE */
+  
     #nav .arrow-down {
       font-size: 12px;
     }
@@ -78,7 +74,7 @@
     }
 
     #header .search-button:hover {
-      background-color: #f44336; /* Đổi sang màu đỏ khi rê chuột */
+      background-color: #f44336;
     }
 
     #header .search-icon {
@@ -86,9 +82,7 @@
       font-size: 14px;
     }
 
-    /* ==========================================================================
-       3. VÙNG 2: CONTENT (Nội dung giới thiệu chữ canh đều)
-       ========================================================================== */
+    /
     #content {
       margin-top: 46px; /* Đẩy nội dung xuống bên dưới thanh menu */
     }
@@ -106,10 +100,10 @@
       font-size: 30px;
       font-weight: 400;
       text-align: center;
-      letter-spacing: 4px; /* Giãn cách các chữ cái thoáng ra */
+      letter-spacing: 4px; 
     }
 
-    /* Tựa đề phụ chữ nghiêng mờ */
+   
     #content .section-sub-heading {
       font-size: 15px;
       text-align: center;
@@ -122,20 +116,18 @@
     #content .about-text {
       font-size: 15px;
       margin-top: 15px;
-      text-align: justify; /* Căn thẳng đều cả lề trái và lề phải */
+      text-align: justify; 
     }
 
-    /* ==========================================================================
-       4. VÙNG 3: MEMBERS (Danh sách 3 cột ảnh thành viên nằm ngang)
-       ========================================================================== */
+    
     #content .members-list {
       margin-top: 48px;
     }
 
-    /* Định dạng cho từng cột thành viên */
+   
     #content .member-item {
       float: left;
-      width: 33.33333%; /* Chia đều không gian thành 3 phần bằng nhau */
+      width: 33.33333%; 
       text-align: center;
     }
 
@@ -146,7 +138,7 @@
 
     #content .member-img {
       width: 154px;
-      border-radius: 4px; /* Bo tròn góc nhẹ cho bức ảnh xinh hơn */
+      border-radius: 4px; 
     }
   </style>
 </head>
