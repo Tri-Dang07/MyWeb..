@@ -1,0 +1,203 @@
+# MyWeb..
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Học trực tuyến Công nghệ thông tin</title>
+  
+  <style>
+    /* ==========================================================================
+       1. RESET & PHONG CÁCH CHUNG (Áp dụng cho toàn bộ trang)
+       ========================================================================== */
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+
+    /* Thẻ kỹ thuật dùng để xóa thuộc tính nổi (float), tránh lỗi vỡ khung */
+    .clear {
+      clear: both;
+    }
+
+    /* ==========================================================================
+       2. VÙNG 1: HEADER & NAVIGATION (Thanh menu màu đen cố định trên cùng)
+       ========================================================================== */
+    #header {
+      height: 46px;
+      background-color: #000;
+      position: fixed; /* Giữ menu cố định khi cuộn trang */
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1; /* Luôn nằm trên các phần tử khác */
+    }
+
+    /* Danh sách menu chính */
+    #nav {
+      display: inline-block;
+    }
+
+    #nav li {
+      display: inline-block;
+      position: relative;
+    }
+
+    #nav li a {
+      color: #fff;
+      text-decoration: none;
+      line-height: 46px;
+      padding: 0 24px;
+      display: block;
+      font-size: 15px;
+    }
+
+    /* Hiệu ứng di chuột (Hover) vào các nút menu: Đổi nền xám, chữ đen */
+    #nav > li:hover > a {
+      color: #000;
+      background-color: #ccc;
+    }
+
+    /* Biểu tượng mũi tên đi xuống ở nút MORE */
+    #nav .arrow-down {
+      font-size: 12px;
+    }
+
+    /* Khu vực nút tìm kiếm bên phải */
+    #header .search-button {
+      float: right;
+      line-height: 46px;
+      padding: 0 23px;
+      cursor: pointer;
+    }
+
+    #header .search-button:hover {
+      background-color: #f44336; /* Đổi sang màu đỏ khi rê chuột */
+    }
+
+    #header .search-icon {
+      color: #fff;
+      font-size: 14px;
+    }
+
+    /* ==========================================================================
+       3. VÙNG 2: CONTENT (Nội dung giới thiệu chữ canh đều)
+       ========================================================================== */
+    #content {
+      margin-top: 46px; /* Đẩy nội dung xuống bên dưới thanh menu */
+    }
+
+    #content .content-section {
+      width: 800px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 64px 16px;
+    }
+
+    /* Tựa đề chính THE BAND */
+    #content .section-heading {
+      font-size: 30px;
+      font-weight: 400;
+      text-align: center;
+      letter-spacing: 4px; /* Giãn cách các chữ cái thoáng ra */
+    }
+
+    /* Tựa đề phụ chữ nghiêng mờ */
+    #content .section-sub-heading {
+      font-size: 15px;
+      text-align: center;
+      margin-top: 25px;
+      font-style: italic;
+      color: #888;
+    }
+
+    /* Đoạn văn bản mô tả ban nhạc */
+    #content .about-text {
+      font-size: 15px;
+      margin-top: 15px;
+      text-align: justify; /* Căn thẳng đều cả lề trái và lề phải */
+    }
+
+    /* ==========================================================================
+       4. VÙNG 3: MEMBERS (Danh sách 3 cột ảnh thành viên nằm ngang)
+       ========================================================================== */
+    #content .members-list {
+      margin-top: 48px;
+    }
+
+    /* Định dạng cho từng cột thành viên */
+    #content .member-item {
+      float: left;
+      width: 33.33333%; /* Chia đều không gian thành 3 phần bằng nhau */
+      text-align: center;
+    }
+
+    #content .member-name {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    #content .member-img {
+      width: 154px;
+      border-radius: 4px; /* Bo tròn góc nhẹ cho bức ảnh xinh hơn */
+    }
+  </style>
+</head>
+<body>
+
+  <div id="header">
+    <ul id="nav">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">BAND</a></li>
+      <li><a href="#">TOUR</a></li>
+      <li><a href="#">CONTACT</a></li>
+      <li>
+        <a href="#">MORE <span class="arrow-down">▼</span></a>
+      </li>
+    </ul>
+    
+    <div class="search-button">
+      <span class="search-icon">🔍</span>
+    </div>
+  </div>
+
+  <div id="content">
+    <div class="content-section">
+      
+      <h2 class="section-heading">THE BAND</h2>
+      <p class="section-sub-heading">We love music</p>
+      <p class="about-text">
+        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+
+      <div class="members-list">
+        <div class="member-item">
+          <p class="member-name">Name</p>
+          <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Member" class="member-img">
+        </div>
+        
+        <div class="member-item">
+          <p class="member-name">Name</p>
+          <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Member" class="member-img">
+        </div>
+        
+        <div class="member-item">
+          <p class="member-name">Name</p>
+          <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Member" class="member-img">
+        </div>
+        
+        <div class="clear"></div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
